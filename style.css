@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    background-color: rgb(16, 0, 156);
+}
+
+.main-game{
+    height: 100%;
+    width: 100%;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.genius{
+    display: grid;
+    grid-template-areas: 'verde vermelho'
+    'amarelo azul';    
+    row-gap: 10px;
+    column-gap: 10px;
+    border: 30px solid black;
+    background-color: black;
+    border-radius: 100%;
+    width: 500px;
+    height: 500px;     
+    
+}
+
+.name{
+    background-color: black;
+    font-family: Broadway;
+    font-size: 45px;
+    height: 200px;
+    width: 200px;
+    position:absolute;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color:grey;
+
+}
+
+.blue{
+    grid-area: azul;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+}
+
+.red{
+    grid-area: vermelho;
+    background-color: red;
+    border-top-right-radius: 100%;
+}
+
+.yellow{
+    grid-area: amarelo;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+}
+
+.green{
+    grid-area: verde;
+    background-color: rgb(6, 221, 24);
+    border-top-left-radius: 100%;
+}
+
+.selected{
+    opacity: 0.7;
+}
+
+
+.botao {
+    font-size:32px;
+    font-family: Broadway;
+    width:140px;
+    height:53px;
+    border-width:1px;
+    color:#fff;
+    border-color:#4e6096;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    box-shadow: 0px 0px 0px 2px #9fb4f2;
+    text-shadow: 0px 1px 0px #283966;
+    background:linear-gradient(rgb(120, 146, 194), #476e9e);
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+  
+  .botao:hover {
+    background: linear-gradient(#476e9e, rgb(120, 146, 194));
+  }
+
+  .level{
+    font-size: 40px;
+    font-family: Broadway;
+    color:#fff;
+    margin-right: 40px;
+    margin-top: 20px;
+    
+  }
+
+
+  .container{
+    display:flex;
+    flex-direction: row;
+    align-items:baseline;
+    justify-content: space-between;
+  }
+
+  .dev{
+      color: white;
+      margin: 5px;
+  }
+  
+footer a{
+    text-decoration: none;
+    color:white;
+}
